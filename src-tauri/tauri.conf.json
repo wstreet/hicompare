@@ -7,7 +7,7 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "hicompare",
+    "productName": "HiCompare",
     "version": "0.0.0"
   },
   "tauri": {
@@ -40,7 +40,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "hicompare",
+        "title": "HiCompare",
         "width": 800,
         "height": 600
       }
