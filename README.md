@@ -1,3 +1,3 @@
 # HiCompare
 
-text compare software
+text comparison tool

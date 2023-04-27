@@ -13,13 +13,13 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.2.0",
-    "ace-diff": "^3.0.3",
+    "codemirror": "^6.0.1",
     "react": "^18.2.0",
+    "react-codemirror-merge": "^4.19.16",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@tauri-apps/cli": "^1.2.3",
-    "@types/ace-diff": "^2.1.1",
     "@types/node": "^18.7.10",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
