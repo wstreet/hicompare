@@ -1,5 +1,9 @@
+
+
 use std::{error::Error, process};
 use tauri::{api, AppHandle, CustomMenuItem, SystemTrayEvent, SystemTrayMenu, SystemTrayMenuItem};
+
+use crate::resolve;
 
 pub struct Tray {}
 
@@ -19,7 +23,7 @@ impl Tray {
     pub fn on_system_tray_event(app_handle: &AppHandle, event: SystemTrayEvent) {
         match event {
             SystemTrayEvent::MenuItemClick { tray_id, id, .. } => match id.as_str() {
-                "open" => {}
+                "open" => resolve::create_window(app_handle),
                 "quit" => {
                     api::process::kill_children();
                     app_handle.exit(0);

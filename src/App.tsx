@@ -8,9 +8,12 @@ const Modified = CodeMirrorMerge.Modified;
 
 function App() {
   return (
-    <CodeMirrorMerge>
-      <Original />
+    <CodeMirrorMerge
+      revertControls="a-to-b"
+    >
+      <Original value={'Hello'} />
       <Modified
+        value={'World'}
         extensions={[EditorView.editable.of(true)]}
       />
     </CodeMirrorMerge>
